@@ -12,10 +12,10 @@ function configurar_smtp($phpmailer) {
     $phpmailer->Host = 'smtp.hostinger.com';
     $phpmailer->SMTPAuth = true;
     $phpmailer->Port = 465;
-    $phpmailer->Username = 'rsvp@camandandrea.com';
+    $phpmailer->Username = 'rsvp@meliandjake.com';
     $phpmailer->Password = 'eoq}80xrhsT3';
     $phpmailer->SMTPSecure = 'ssl';
-    $phpmailer->From = 'rsvp@camandandrea.com';
+    $phpmailer->From = 'rsvp@meliandjake.com';
     $phpmailer->FromName = 'MELI & JAKE\'s Wedding';
 }
 
@@ -26,7 +26,7 @@ add_action('phpmailer_init', 'configurar_smtp');
  * Function to send email to administrator
  */
 function sendAdminEmail($guest_name, $guests, $allergies, $email) {
-    $admin_email = 'rsvp@camandandrea.com';
+    $admin_email = 'rsvp@meliandjake.com';
     $subject = '✉️ New RSVP - ' . $guest_name;
     
     // Generate detailed list by event
@@ -109,7 +109,7 @@ function sendAdminEmail($guest_name, $guests, $allergies, $email) {
     </html>';
     
     $headers = [
-        'From: rsvp@camandandrea.com',
+        'From: rsvp@meliandjake.com',
         'Reply-To: ' . $email,
         'Content-Type: text/html; charset=UTF-8'
     ];
@@ -230,7 +230,7 @@ function sendGuestEmail($guest_name, $email) {
     </html>';
     
     $headers = [
-        'From: rsvp@camandandrea.com',
+        'From: rsvp@meliandjake.com',
         'Content-Type: text/html; charset=UTF-8'
     ];
     
