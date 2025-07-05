@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Restora Neue';
+    src: url('../../font/restoraneue/RestoraNeue-Light.woff2') format('woff2'),
+        url('../../font/restoraneue/RestoraNeue-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Restora Neue';
+    src: url('../../font/restoraneue/RestoraNeue-Regular.woff2') format('woff2'),
+        url('../../font/restoraneue/RestoraNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Austrisa Demo';
+    src: url('../../font/austrisademo/AustrisaDemoRegular.woff2') format('woff2'),
+        url('../../font/austrisademo/AustrisaDemoRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font Sizes */
+@media only screen and (min-width: 992px) {
+    .fs-lg-1 {
+        font-size: 172px !important;
+    }
+
+    .fs-lg-1-medium {
+        font-size: 128px !important;
+    }
+
+    .fs-lg-1-small {
+        font-size: 72px !important;
+    }
+
+    .fs-lg-2 {
+        font-size: 30px !important;
+    }
+
+    .fs-lg-3 {
+        font-size: 28px !important;
+    }
+
+    .fs-lg-4 {
+        font-size: 24px !important;
+    }
+
+    .fs-lg-5 {
+        font-size: 22px !important;
+    }
+
+    .fs-lg-6 {
+        font-size: 20px !important;
+    }
+
+    .fs-lg-p {
+        font-size: 18px !important;
+    }
+
+    .fs-lg-p-medium {
+        font-size: 16px !important;
+    }
+
+    .fs-lg-p-small {
+        font-size: 14px !important;
+    }
+
+    .fs-lg-p-small-2 {
+        font-size: 10px !important;
+    }
+
+    .letter-spacing-lg-07 {
+        letter-spacing: 0.7px !important;
+    }
+
+    .letter-spacing-lg-1 {
+        letter-spacing: 1px !important;
+    }
+
+    .letter-spacing-lg-15 {
+        letter-spacing: 1.5px !important;
+    }
+
+    .letter-spacing-lg-16 {
+        letter-spacing: 1.6px !important;
+    }
+
+    .letter-spacing-lg-18 {
+        letter-spacing: 1.8px !important;
+    }
+
+    .letter-spacing-lg-24 {
+        letter-spacing: 2.4px !important;
+    }
+
+    .letter-spacing-lg-28 {
+        letter-spacing: 2.8px !important;
+    }
+
+    .letter-spacing-lg-59 {
+        letter-spacing: 5.9px !important;
+    }
+
+    .letter-spacing-lg-96 {
+        letter-spacing: 9.6px !important;
+    }
+
+    .letter-spacing-lg-12 {
+        letter-spacing: 12px !important;
+    }
+    
+    .letter-spacing-lg-28-2 {
+        letter-spacing: 28px !important;
+    }
+}
