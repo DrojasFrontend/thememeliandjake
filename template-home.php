@@ -174,8 +174,8 @@ get_header();
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 -mt-lg-5 position-relative z-1">
-                    <div class="customBoxPaper p-lg-5 shadow-1">
-                        <h2 class="font-austrisa fs-lg-1-medium text-center text-primary fw-light mb-5">Places to Interest</h2>
+                    <div class="customBoxPaper px-lg-5 pt-2 pb-lg-5 shadow-1">
+                        <h2 class="font-austrisa fs-lg-1-medium text-center text-primary fw-light mb-3">Places to Interest</h2>
                         <ul>
                             <li class="clickeable">
                                 <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
