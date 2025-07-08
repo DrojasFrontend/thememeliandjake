@@ -178,7 +178,7 @@ get_header();
                         <h2 class="font-austrisa fs-lg-1-medium text-center text-primary fw-light mb-3">Places to Interest</h2>
                         <ul>
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#travel-info" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         TRAVEL INFO
                                         <span class="d-block fs-lg-5">Info de Viaje</span>
@@ -187,7 +187,7 @@ get_header();
                                 </a>
                             </li>
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#hotels" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         HOTELS
                                         <span class="d-block fs-lg-5">Hoteles</span>
@@ -196,7 +196,7 @@ get_header();
                                 </a>
                             </li>
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#restaurants" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         RESTAURANTS
                                         <span class="d-block fs-lg-5">Restaurantes</span>
@@ -205,7 +205,7 @@ get_header();
                                 </a>
                             </li>
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#brunch" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         BRUNCH & DESSERTS
                                         <span class="d-block fs-lg-5">Brunch y Postres</span>
@@ -213,17 +213,17 @@ get_header();
                                     <img src="<?php echo THEME_IMG; ?>icons/icon-brunch.svg" alt="hotel">
                                 </a>
                             </li>
-                            <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                            <!-- <li class="clickeable">
+                                <a href="/cartagena#bars" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         BARS
                                         <span class="d-block fs-lg-5">Bares</span>
                                     </span>
                                     <img src="<?php echo THEME_IMG; ?>icons/icon-bars.svg" alt="hotel">
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#boutiques" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         BOUTIQUES
                                         <span class="d-block fs-lg-5">Boutiques</span>
@@ -232,7 +232,7 @@ get_header();
                                 </a>
                             </li>
                             <li class="clickeable">
-                                <a href="" class="d-flex justify-content-between align-items-center py-3 px-5">
+                                <a href="/cartagena#beauty" class="d-flex justify-content-between align-items-center py-3 px-5">
                                     <span class="font-restora fs-lg-3 text-primary letter-spacing-lg-15">
                                         BEAUTY SALONS
                                         <span class="d-block fs-lg-5">Salones de Belleza</span>
