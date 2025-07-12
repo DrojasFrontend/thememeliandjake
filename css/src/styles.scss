@@ -169,15 +169,10 @@ table {
 }
 
 body {
-    display: none;
     margin: 0;
     padding: 0;
     font-family: var(--bs-font-family-base);
     -webkit-font-smoothing: antialiased;
-
-    @media only screen and (min-width: 1200px) {
-        display: block;
-    }
 }
 
 strong {
@@ -254,6 +249,13 @@ strong {
 
 header {
     transition: all 0.4s ease;
+    background-color: var(--bs-white);
+    margin-top: 10px;
+
+    @media only screen and (min-width: 992px) {
+        background-color: transparent;
+        margin-top: 0;
+    }
 
     &.is-scroll {
         background: rgba(250, 247, 233, 0.95);
@@ -299,48 +301,76 @@ header {
 
         &Cocktail {
             &__img {
-                width: 50vw;
+                @media only screen and (min-width: 992px) {
+                    width: 50vw;
+                }
             }
 
             .customBoxPaper {
                 position: relative;
                 z-index: 1;
+                background: transparent;
+                background-image: none;
 
                 @media only screen and (min-width: 1200px) {
                     margin-left: -80px;
+                    background: var(--bs-white);
+                    background-image: url(../../images/bckg-paper.webp);
+                    box-shadow: 0px 25px 70px 0px rgba(0, 0, 0, 0.35);
                 }
 
                 &__cartagena {
-                    height: 140%;
+                    background: var(--bs-white);
+                    background-image: url(../../images/bckg-paper.webp);
+                    
+                    @media only screen and (min-width: 992px) {
+                        height: 140%;
+                    }
                 }
             }
         }
 
         &Places {
             &__img {
-                width: 50vw;
+                @media only screen and (min-width: 992px) {
+                    width: 50vw;
+                }
             }
 
             .customBoxPaper {
-                margin-left: -100px;
+                @media only screen and (min-width: 992px) {
+                    margin-left: -100px;
+                }
             }
 
             a {
                 border-bottom: 1px solid var(--bs-primary);
+            }
+
+            span {
+                + img {
+                    width: 40px;
+
+                    @media only screen and (min-width: 992px) {
+                        width: auto;
+                    }   
+                }
             }
         }
 
         &CartagenaPlaces {
             position: relative;
 
-            &::before {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 380px;
-                background-color: var(--bs-white);
+            @media only screen and (min-width: 992px) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 380px;
+                    background-color: var(--bs-white);
+                }
             }
 
             &__img {
@@ -546,11 +576,26 @@ iframe {
     }
 }
 
+.-mt-22 {
+    margin-top: -22rem !important;
+    @media only screen and (min-width: 992px) {
+        margin-top: 0rem !important;
+    }
+}
+
 .border-right {
-    border-right: 1px solid var(--bs-white);
-    border-left: 1px solid var(--bs-white);
+    @media only screen and (min-width: 1200px) {
+        border-right: 1px solid var(--bs-white);
+        border-left: 1px solid var(--bs-white);
+    }
 }
 
 .customMainCartagena {
     background: rgba(208, 197, 143, 0.50);
+}
+
+.position-xl-absolute {
+    @media only screen and (min-width: 1200px) {
+        position: absolute;
+    }
 }

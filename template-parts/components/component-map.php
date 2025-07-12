@@ -11,12 +11,12 @@
                     <div class="col-12 col-xl-2 border-right px-4">
                         <div class="d-flex flex-column justify-content-center h-100">
                             <p class="fs-lg-p fs-p text-white letter-spacing-xl-18 letter-spacing-15">RAFAEL NUÑEZ</p>
-                            <p class="fs-lg-p-small-2 text-white">INTERNATIONAL AIRPORT</p>
-                            <p class="fs-lg-p-small-2 text-white">CARTAGENA, COLOMBIA</p>
+                            <p class="fs-lg-p-small-2 fs-p-small text-white">INTERNATIONAL AIRPORT</p>
+                            <p class="fs-lg-p-small-2 fs-p-small text-white">CARTAGENA, COLOMBIA</p>
                         </div>
                     </div>
                     <div class="col-12 col-xl-9 ps-4">
-                        <p class="fs-lg-p-small-2 fs-8 text-white py-1 mb-2">
+                        <p class="fs-lg-p-small-2 fs-p-small fs-8 text-white py-1 mb-2">
                             Flight to Cartagena on the Caribbean coast. Jet Blue, American Airlines, Avianca, Spirit Air and Copa Airlines operate direct flights to the Rafael Nuñez Airport. The airport is a short 10-minutes taxi journey to the old town. There are authorized taxi services 24 hours. The rate to Getsemaní costs about $14.000 cop. To the hotel zone of the Historic Center (Ciudad Amurallada) about $14.000 cop and to the Bocagrande zone it costs $20.000 cop.  
                         </p>
                         <p class="fs-lg-p-small-2 fs-8 text-white">

@@ -25,10 +25,42 @@
     font-display: swap;
 }
 
+.fs-1 {
+    font-size: 92px !important;
+}
+
+.fs-1-small {
+    font-size: 64px !important;
+}
+
+.fs-2 {
+    font-size: 20px !important;
+}
+
+.fs-p {
+    font-size: 18px !important;
+}
+
+.fs-p-small {
+    font-size: 14px !important;
+}
+
+.letter-spacing-1 {
+    letter-spacing: 1px !important;
+}
+
+.letter-spacing-07 {
+    letter-spacing: 0.7px !important;
+}
+
+.letter-spacing-8 {
+    letter-spacing: 8px !important;
+}
+
 /* Font Sizes */
 @media only screen and (min-width: 992px) {
     .fs-lg-1 {
-        font-size: 172px !important;
+        font-size: 168px !important;
     }
 
     .fs-lg-1-medium {

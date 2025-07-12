@@ -578,7 +578,8 @@ $places = [
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="customSectionHero__img position-relative h-100 float-start">
-                        <img class="position-absolute top-0 start-0 shadow-1" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
+                        <img class="position-absolute top-0 start-0 shadow-1 d-none d-lg-block" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
+                        <img class="position-relative w-100 shadow-1 d-block d-lg-none" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
                     </div>
                 </div>
                 
@@ -591,7 +592,7 @@ $places = [
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-11 mx-auto">
-                        <div class="customBoxPaper p-5 mb-5">
+                        <div class="customBoxPaper p-lg-5 mb-5">
                             <div class="d-flex flex-lg-row-reverse justify-content-between align-items-center py-3 px-4 gap-3">
                                 <div class="icon">
                                     <img src="<?php echo THEME_IMG . 'icons/icon-airplane.svg'; ?>" alt="">
@@ -599,7 +600,7 @@ $places = [
                                 <h2 class="fs-lg-2 text-primary letter-spacing-lg-28 uppercase">TRAVEL INFO</h2>
                             </div>
                             <div class="line line--full mb-4"></div>
-                            <div class="px-4">
+                            <div class="px-4 pb-lg-0 pb-4">
                                 <h2 class="fs-lg-5 text-primary letter-spacing-24 uppercase">Passports</h2>
                                 <p class="fs-lg-6 text-gray-200 letter-spacing-1 mb-4">Don't forget your passports! Please double check the expiration date.</p>
                                 <h2 class="fs-lg-5 text-primary letter-spacing-24 uppercase">CheckMig</h2>
@@ -618,11 +619,11 @@ $places = [
             </div>
     
             <?php foreach ($places as $key => $category) { ?>
-                <div class="customSectionCartagenaPlaces pb-5 mb-5 position-relative" id="<?php echo $category['id']; ?>">
+                <div class="customSectionCartagenaPlaces pb-lg-5 mb-lg-5 mb-5 position-relative" id="<?php echo $category['id']; ?>">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-lg-11 mx-auto">
-                                <div class="px-5">
+                                <div class="px-lg-5">
                                     <div class="d-flex flex-lg-row-reverse justify-content-between align-items-center py-3 px-4 gap-3">
                                         <div class="icon">
                                             <img class="w-100" src="<?php echo $category['img']; ?>" alt="">
@@ -632,9 +633,9 @@ $places = [
                                 </div>
                                 <div class="line line--full mb-4"></div>
                                 <?php if (!empty($category['info'])) : ?>
-                                    <div class="px-5">
+                                    <div class="px-lg-5 px-2">
                                         <div class="row">
-                                            <div class="col-12 col-lg-10 mb-lg-5 mb-3 px-4">
+                                            <div class="col-12 col-lg-10 mb-lg-5 mb-3 px-lg-4">
                                                 <p class="fs-lg-6 text-gray-200 letter-spacing-1 mb-4"><?php echo $category['info']; ?></p>
                                             </div>
                                         </div>

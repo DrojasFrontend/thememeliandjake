@@ -11,21 +11,21 @@ export const initCountdown = (targetDate, containerId) => {
     // Crear HTML básico
     container.innerHTML = `
         <div class="countdown">
-            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium">
+            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium fs-1">
                 <span class="letter-spacing-36" id="${containerId}-days">00</span>
-                <label class="fs-lg-4 letter-spacing-xl-156 fs-3 text-uppercase">days</label>
+                <label class="fs-lg-4 letter-spacing-xl-156 fs-p text-uppercase">days</label>
             </div>
-            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium">
+            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium fs-1">
                 <span class="letter-spacing-36" id="${containerId}-hours">00</span>
-                <label class="fs-lg-4 letter-spacing-xl-156 fs-3 text-uppercase">hours</label>
+                <label class="fs-lg-4 letter-spacing-xl-156 fs-p text-uppercase">hours</label>
             </div>
-            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium">
+            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium fs-1">
                 <span class="letter-spacing-36" id="${containerId}-minutes">00</span>
-                <label class="fs-lg-4 letter-spacing-xl-156 fs-3 text-uppercase">minutes</label>
+                <label class="fs-lg-4 letter-spacing-xl-156 fs-p text-uppercase">minutes</label>
             </div>
-            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium">
+            <div class="d-flex flex-column text-center text-primary fs-lg-1-medium fs-1">
                 <span class="letter-spacing-36" id="${containerId}-seconds">00</span>
-                <label class="fs-lg-4 letter-spacing-xl-156 fs-3 text-uppercase">seconds</label>
+                <label class="fs-lg-4 letter-spacing-xl-156 fs-p text-uppercase">seconds</label>
             </div>
         </div>
     `;

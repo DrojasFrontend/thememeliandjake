@@ -32,29 +32,29 @@
     <div class="">
       <div class="container-fluid gx-lg-0 py-1">
         <div class="row gx-0 justify-content-between">
-          <div class="col-8 d-flex align-items-center d-xl-none ">
+          <div class="col-8 d-flex align-items-center d-lg-none ">
             <div class="text-center">
               <a class="d-block" href="/">
                 <img width="50" src="<?php echo THEME_IMG; ?>main-logo.svg" alt="Logo" class="img-fluid">
               </a>
             </div>
           </div>
-          <div class="customHeaderDesktop col-lg-6 mx-auto <?php echo is_page('cartagena') ? 'ms-0' : 'me-0' ?> d-none d-xl-block">
-            <ul class="customHeader d-none d-xl-grid gap-5 py-xl-2">
-              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#wedding">WEDDING</a></li>
-              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#events">EVENTS</a></li>
+          <div class="customHeaderDesktop col-lg-6 mx-auto <?php echo is_page('cartagena') ? 'ms-0' : 'me-0' ?> d-none d-lg-block">
+            <ul class="customHeader d-none d-lg-grid gap-5 py-lg-2">
+              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#wedding">WEDDING</a></li>
+              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#events">EVENTS</a></li>
               <li class="d-flex justify-content-center align-items-center">
-                <a class="font-restora fs-xl-3-small text-gray-100 letter-spacing-xl-64" href="/">
+                <a class="font-restora fs-lg-3-small text-gray-100 letter-spacing-lg-64" href="/">
                   <img width="50" src="<?php echo THEME_IMG; ?>main-logo.svg" alt="Logo" class="scrolledMenuLogo w-0 opacity-0">
                 </a>
               </li>
-              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#cartagena">CARTAGENA</a></li>
+              <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#cartagena">CARTAGENA</a></li>
               <li class="d-flex justify-content-center align-items-center">
-                <a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#rsvp">R.S.V.P.</a>
+                <a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#rsvp">R.S.V.P.</a>
               </li>
             </ul>
           </div>
-          <div class="col-4 d-flex justify-content-end align-items-center d-xl-none gap-2">
+          <div class="col-4 d-flex justify-content-end align-items-center d-lg-none gap-2">
             <button type="button" class="pt-1 border-0 bg-transparent p-0 text-gray-100" style="width: 30px" data-toggle-menu>
               <?php get_template_part('template-parts/components/icons/icon-menu'); ?>
             </button>
@@ -72,17 +72,17 @@
         <button class="position-absolute top-0 end-0 mt-2 pe-2 p-0 border-0 bg-transparent" style="width: 40px" data-close-menu>
           <?php get_template_part('template-parts/components/icons/icon-close'); ?>
         </button>
-        <ul class="customHeader d-flex flex-column justify-content-center align-items-center gap-5 py-xl-2 py-1">
-          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#wedding">WEDDING</a></li>
-          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#events">EVENTS</a></li>
+        <ul class="customHeader d-flex flex-column justify-content-center align-items-center gap-5 py-lg-2 py-1">
+          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#wedding">WEDDING</a></li>
+          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#events">EVENTS</a></li>
           <li class="d-flex justify-content-center align-items-center">
-            <a class="font-restora fs-xl-3-small text-gray-100 letter-spacing-xl-64" href="/">
+            <a class="font-restora fs-lg-3-small text-gray-100 letter-spacing-lg-64" href="/">
               <img width="60" src="<?php echo THEME_IMG; ?>main-logo.svg" alt="Logo" class="img-fluid">
             </a>
           </li>
-          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#cartagena">CARTAGENA</a></li>
+          <li class="d-flex justify-content-center align-items-center"><a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#cartagena">CARTAGENA</a></li>
           <li class="d-flex justify-content-center align-items-center">
-            <a class="font-restora fs-xl-p-medium text-gray-100 letter-spacing-xl-16" href="/#rsvp">R.S.V.P.</a>
+            <a class="font-restora fs-lg-p-medium text-gray-100 letter-spacing-lg-16" href="/#rsvp">R.S.V.P.</a>
           </li>
         </ul>
       </div>
