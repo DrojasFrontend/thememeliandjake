@@ -92,7 +92,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="pt-lg-5 position-relative pb-lg-5">
+        <div class="pt-lg-5 position-relative pb-lg-5" id="events">
             <div class="container">
                 <div class="row d-flex flex-lg-row flex-column-reverse">
                     <div class="col-12 col-lg-6 ps-lg-4 px-5 pb-5">

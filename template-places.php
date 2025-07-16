@@ -445,14 +445,6 @@ $places = [
               "image" => THEME_IMG . 'places-cartagena/boutiques-6.webp',
           ],
           [
-              "name" => "Goretty Medina",
-              "address" => "Calle La Mantilla # 3 - 44",
-              "city" => "Centro Histórico, Cartagena",
-              "phone" => "57 317 4368144",
-              "link" => "https://co.gorettymedinac.com",
-              "image" => THEME_IMG . 'places-cartagena/boutiques-7.webp',
-          ],
-          [
               "name" => "Ketty Tinoco",
               "address" => "Calle Balocco # 33 - 01",
               "city" => "Centro Histórico, Cartagena",
