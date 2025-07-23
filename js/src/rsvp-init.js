@@ -25,9 +25,7 @@ const rsvpEvents = [
 
 // Datos de invitados (embebidos directamente)
 const invitedGuests = {
-    'Migue': ['Fanny', 'Daniel'],
-    'Fanny': ['Migue', 'Daniel'],
-    'Daniel': ['Migue', 'Fanny'],
+    'Migue': ['Migue', 'Fanny', 'Daniel'],
 };
 
 /**
@@ -211,6 +209,8 @@ function showStep(step) {
         }
     } else if (step === 6) {
         setupAdditionalInfoStep();
+    } else if (step === 7) {
+        setupThankYouStep();
     }
 }
 
@@ -439,6 +439,49 @@ function setupAdditionalInfoStep() {
     if (emailInput) emailInput.value = emailInput.value || '';
 }
 
+// Configurar paso de agradecimiento
+function setupThankYouStep() {
+    const thankYouContainer = document.querySelector('#step-7 .rsvp-thank-you');
+    if (!thankYouContainer) return;
+    
+    // Verificar si el invitado principal declinó todos los eventos
+    const primaryGuestDeclinedAll = checkIfPrimaryGuestDeclinedAll();
+    
+    if (primaryGuestDeclinedAll) {
+        // Mensaje para quienes declinan
+        thankYouContainer.innerHTML = `
+            <h3 class="fs-lg-3 text-primary mb-2">THANKS</h3>
+            <p class="fs-6 text-black font-secondary mb-1 col-xl-8 pe-xl-3">Thank you for letting us know. We'll miss you on our special day, but we truly appreciate your thoughtfulness in responding to our invitation.</p>
+            <button type="button" class="rsvp-btn rsvp-btn-primary rsvp-home-btn btn btn-primary w-100">BACK TO HOME</button>
+        `;
+    } else {
+        // Mensaje original para quienes asisten
+        thankYouContainer.innerHTML = `
+            <h3 class="fs-lg-3 text-primary mb-2">THANKS</h3>
+            <p class="fs-6 text-black font-secondary mb-1 col-xl-8 pe-xl-3">Thank you for confirming your attendance to our wedding. We are very happy to share this special day with you. We will send a copy of your RSVP to your email.</p>
+            <button type="button" class="rsvp-btn rsvp-btn-primary rsvp-home-btn btn btn-primary w-100">BACK TO HOME</button>
+        `;
+    }
+}
+
+// Verificar si el invitado principal declinó todos los eventos
+function checkIfPrimaryGuestDeclinedAll() {
+    const primaryGuest = rsvpState.selectedGuest;
+    if (!primaryGuest) return false;
+    
+    // Verificar cada evento
+    const events = ['ceremony', 'reception', 'welcome', 'brunch'];
+    for (const eventId of events) {
+        const response = rsvpState.rsvpData[eventId][primaryGuest];
+        // Si acepta explícitamente O está pendiente (que se considera accept), no declinó todos
+        if (response === 'accept' || response === 'pending') {
+            return false;
+        }
+    }
+    
+    return true; // Solo si EXPLÍCITAMENTE declinó todos los eventos
+}
+
 // Establecer respuesta del invitado
 function setGuestResponse(guestName, response, eventId) {
     rsvpState.rsvpData[eventId][guestName] = response;
@@ -575,6 +618,13 @@ function submitRSVP() {
     
     // Debug: Verificar JSON antes de enviar
     const jsonString = JSON.stringify(processedData);
+    
+    // TEMPORAL: Log para debug
+    console.log('🐛 DEBUG - Datos a enviar:', {
+        guest_name: rsvpState.selectedGuest,
+        processedData: processedData,
+        primaryGuestDeclinedAll: checkIfPrimaryGuestDeclinedAll()
+    });
     
     fetch(window.location.href, {
         method: 'POST',

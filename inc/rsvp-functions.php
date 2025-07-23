@@ -120,41 +120,97 @@ function sendAdminEmail($guest_name, $guests, $allergies, $email) {
 /**
  * Function to send email to guest
  */
-function sendGuestEmail($guest_name, $email) {
-    $subject = '💌 RSVP Confirmation - MELI & JAKE\'s Wedding';
+function sendGuestEmail($guest_name, $email, $declined_all = false) {
+    if ($declined_all) {
+        $subject = 'RSVP Received – We\'ll Miss You!';
+    } else {
+        $subject = '💌 RSVP Confirmation - MELI & JAKE\'s Wedding';
+    }
     
-    $message = '
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <style>
-            body { font-family: "Georgia", serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f5f5f5; }
-            .container { max-width: 600px; margin: 0 auto; background: white; }
-            .header { background: linear-gradient(135deg, #746448, #A5B375); color: white; padding: 40px 30px; text-align: center; }
-            .header h1 { margin: 0 0 10px 0; font-size: 28px; font-weight: normal; }
-            .header p { margin: 0; font-size: 16px; opacity: 0.9; }
-            .content { padding: 40px 30px; }
-            .greeting { font-size: 20px; color: #746448; margin-bottom: 20px; text-align: center; }
-            .message { font-size: 16px; line-height: 1.8; margin-bottom: 30px; text-align: center; }
-            .events-container { margin: 30px 0; }
-            .event { margin: 20px 0; padding: 20px; background: #f9f9f9; border-left: 4px solid #746448; }
-            .event-title { font-size: 18px; color: #746448; font-weight: bold; margin-bottom: 10px; }
-            .event-details { font-size: 14px; color: #666; line-height: 1.6; }
-            .event-details strong { color: #333; }
-            .footer { background: #746448; color: white; padding: 30px; text-align: center; }
-            .footer h3 { margin: 0 0 15px 0; font-size: 20px; }
-            .footer p { margin: 5px 0; font-size: 14px; opacity: 0.9; }
-            .divider { height: 2px; background: linear-gradient(to right, transparent, #746448, transparent); margin: 30px 0; }
-            .contact-info { background: #e8f5e8; padding: 20px; margin: 20px 0; text-align: center; font-size: 14px; border-radius: 5px; }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>🎉 Thank You for Your RSVP!</h1>
-                <p>MELI & JAKE\'s Wedding</p>
+    if ($declined_all) {
+        $message = '
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { font-family: "Georgia", serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f5f5f5; }
+                .container { max-width: 600px; margin: 0 auto; background: white; }
+                .header { background: linear-gradient(135deg, #746448, #A5B375); color: white; padding: 40px 30px; text-align: center; }
+                .header h1 { margin: 0 0 10px 0; font-size: 28px; font-weight: normal; }
+                .header p { margin: 0; font-size: 16px; opacity: 0.9; }
+                .content { padding: 40px 30px; text-align: center; }
+                .greeting { font-size: 20px; color: #746448; margin-bottom: 20px; }
+                .message { font-size: 18px; line-height: 1.8; margin-bottom: 30px; color: #555; }
+                .footer { background: #746448; color: white; padding: 30px; text-align: center; }
+                .footer h3 { margin: 0 0 15px 0; font-size: 20px; }
+                .footer p { margin: 5px 0; font-size: 14px; opacity: 0.9; }
+                .divider { height: 2px; background: linear-gradient(to right, transparent, #746448, transparent); margin: 30px 0; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>RSVP Received – We\'ll Miss You!</h1>
+                    <p>MELI & JAKE\'s Wedding</p>
+                </div>
+                
+                <div class="content">
+                    <div class="greeting">
+                        Dear ' . $guest_name . ',
+                    </div>
+                    
+                    <div class="message">
+                        Thank you for letting us know.<br><br>
+                        We\'ll miss you on our special day, but we truly appreciate your kind wishes and thoughts.
+                    </div>
+                    
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="footer">
+                    <h3>With love,</h3>
+                    <p><strong>MELI & JAKE</strong></p>
+                    <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+                        <p style="font-size: 12px;">January 16th, 2026 • Cartagena de Indias, Colombia</p>
+                    </div>
+                </div>
             </div>
+        </body>
+        </html>';
+    } else {
+        $message = '
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+                body { font-family: "Georgia", serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f5f5f5; }
+                .container { max-width: 600px; margin: 0 auto; background: white; }
+                .header { background: linear-gradient(135deg, #746448, #A5B375); color: white; padding: 40px 30px; text-align: center; }
+                .header h1 { margin: 0 0 10px 0; font-size: 28px; font-weight: normal; }
+                .header p { margin: 0; font-size: 16px; opacity: 0.9; }
+                .content { padding: 40px 30px; }
+                .greeting { font-size: 20px; color: #746448; margin-bottom: 20px; text-align: center; }
+                .message { font-size: 16px; line-height: 1.8; margin-bottom: 30px; text-align: center; }
+                .events-container { margin: 30px 0; }
+                .event { margin: 20px 0; padding: 20px; background: #f9f9f9; border-left: 4px solid #746448; }
+                .event-title { font-size: 18px; color: #746448; font-weight: bold; margin-bottom: 10px; }
+                .event-details { font-size: 14px; color: #666; line-height: 1.6; }
+                .event-details strong { color: #333; }
+                .footer { background: #746448; color: white; padding: 30px; text-align: center; }
+                .footer h3 { margin: 0 0 15px 0; font-size: 20px; }
+                .footer p { margin: 5px 0; font-size: 14px; opacity: 0.9; }
+                .divider { height: 2px; background: linear-gradient(to right, transparent, #746448, transparent); margin: 30px 0; }
+                .contact-info { background: #e8f5e8; padding: 20px; margin: 20px 0; text-align: center; font-size: 14px; border-radius: 5px; }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>🎉 Thank You for Your RSVP!</h1>
+                    <p>MELI & JAKE\'s Wedding</p>
+                </div>
             
             <div class="content">
                 <div class="greeting">
@@ -228,6 +284,7 @@ function sendGuestEmail($guest_name, $email) {
         </div>
     </body>
     </html>';
+    }
     
     $headers = [
         'From: rsvp@meliandjake.com',
@@ -327,9 +384,24 @@ function handle_rsvp_ajax() {
                     'guests_count' => count($guests)
                 ], true));
                 
+                // Check if primary guest declined all events
+                $primary_guest_declined_all = true;
+                error_log('🐛 DEBUG - Checking primary guest: ' . $guest_name);
+                foreach ($guests as $event_id => $event_guests) {
+                    error_log('🐛 DEBUG - Event ' . $event_id . ': ' . print_r($event_guests, true));
+                    if (isset($event_guests[$guest_name])) {
+                        error_log('🐛 DEBUG - Primary guest response for ' . $event_id . ': ' . $event_guests[$guest_name]);
+                        if ($event_guests[$guest_name] === 'accept') {
+                            $primary_guest_declined_all = false;
+                            break;
+                        }
+                    }
+                }
+                error_log('🐛 DEBUG - Primary guest declined all: ' . ($primary_guest_declined_all ? 'YES' : 'NO'));
+                
                 // Send actual emails
                 $admin_sent = sendAdminEmail($guest_name, $guests, $allergies, $email);
-                $guest_sent = sendGuestEmail($guest_name, $email);
+                $guest_sent = sendGuestEmail($guest_name, $email, $primary_guest_declined_all);
                 
                 // Response with email status
                 header('Content-Type: application/json');
