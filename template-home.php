@@ -99,7 +99,7 @@ get_header();
                         <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light letter-spacing-1">Shabbat</h2>
                         <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-4">CENA DE SHABBAT</p>
     
-                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 22nd, 2026</p>
+                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 22th, 2026</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">7:00 P.M.</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">CASA 1537</p>
                         

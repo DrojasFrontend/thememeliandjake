@@ -49,7 +49,7 @@
                     <h2 class="fs-lg-3 text-primary mb-2">RECEPTION</h2>
                     <div class="rsvp-form-event-details">
                         <p class="fs-6 text-black font-secondary mb-1">May 24th, 2026</p>
-                        <p class="fs-6 text-black font-secondary mb-1">Tatro Heredia</p>
+                        <p class="fs-6 text-black font-secondary mb-1">Teatro Heredia</p>
                         <p class="fs-6 text-black font-secondary mb-1">Following the ceremony</p>
                     </div>
                     <div id="guest-list-reception" class="rsvp-guest-list mt-3">
@@ -137,7 +137,7 @@
                     <div class="rsvp-thank-you">
                         <h3 class="fs-lg-3 text-primary mb-2">THANKS</h3>
                         <p class="fs-6 text-black font-secondary mb-1 col-xl-8 pe-xl-3">Thank you for confirming your attendance to our wedding. We are very happy to share this special day with you. We will send a copy of your RSVP to your email.</p>
-                        <button type="button" class="rsvp-btn rsvp-btn-primary rsvp-home-btn btn btn-primary w-100">BACK TO HOME</button>
+                        <button type="button" class="rsvp-btn rsvp-btn-primary rsvp-home-btn btn btn-primary w-100 border-0">BACK TO HOME</button>
                     </div>
                 </div>
             </form>
