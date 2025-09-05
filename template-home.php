@@ -57,12 +57,14 @@ get_header();
                             <p class="font-restora fs-lg-4 fs-2 text-black letter-spacing-lg-96 letter-spacing-8 mb-lg-5 mb-3">NUESTRA BODA</p>
                             <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 24th, 2026</p>
                             <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">7:00 P.M.</p>
-                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">Baluarte Santa Clara</p>
+                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2">Baluarte Santa Clara</p>
+                            <a href="https://maps.app.goo.gl/sZ3f67tM9pUJH3Wi8" target="_blank" class="btn btn-primary mx-auto mb-5">LOCATION</a>
 
-                            <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-3">RECEPTION</p>
-                            <h2 class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Teatro Heredia</h2>
+                            <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-3 text-uppercase">reception to follow</p>
+                            <h2 class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Teatro Adolfo Mejía</h2>
+                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2">Cartagena, Colombia</p>
+                            <a href="https://maps.app.goo.gl/qNo9DagZGzH98abA8" target="_blank" class="btn btn-primary mx-auto mb-5">LOCATION</a>
 
-                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">Cartagena, Colombia</p>
 
                             <h2 class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-4">DRESS CODE</h2>
 
@@ -101,8 +103,9 @@ get_header();
     
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 22th, 2026</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">7:00 P.M.</p>
-                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">CASA 1537</p>
-                        
+                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2">CASA 1537</p>
+                        <a href="https://maps.app.goo.gl/hTUVaZimVJ4sRWit5" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
+
                         <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8">DRESS CODE</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">White Cocktail Chic Attire</p>
     
@@ -139,7 +142,9 @@ get_header();
                             <h2 class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 23th, 2026</h2>
                             <h2 class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">6:00 P.M.</h2>
     
-                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-3">Terraza Centro <br class="d-block d-lg-none"> de Convenciones</p>
+                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Patio de Banderas</p>
+                            <p class="font-restora fs-lg-4 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-3">Centro de convenciones Cartagena de Indias</p>
+                            <a href="https://maps.app.goo.gl/nMMrFYRjqier7YFr6" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
     
                             <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8">DRESS CODE</p>
                             <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Tropical Sunset Chic Attire</p>
@@ -157,8 +162,9 @@ get_header();
                     <div class="customBoxPaper customBoxPaper__cartagena p-lg-5 pb-lg-0 text-center">
                         <div class="px-lg-4 py-lg-0 px-4 pb-5">
                             <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light mb-4">Cartagena</h2>
-                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We were very excited to have our wedding in Cartagena. A city full of magic, charm, history and tradition, which is characterized by its great wall, cobblestone streets and beautiful colonial houses. Cartagena is a UNESCO World Heritage Site and is considered one of the greatest cultural treasures of Latin America.</p>
-                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1">We would like to make some recommendations, so that you can enjoy your stay in this wonderful place to the fullest. The best way to experience Cartagena is to walk and explore its labyrinths of narrow streets and lush squares. Ideally, you should stay in the historic district, so that you can be within walking distance of places of interest and experience live music, excellent gastronomy and popular art.</p>
+                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We are delighted to celebrate our wedding in Colombia’s coastal gem, Cartagena. Recognized as a UNESCO World Heritage Site, this city is one of South America’s greatest cultural treasures.</p>
+                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">In its historic center, known as the Walled City, you will find charming plazas, cobblestone streets, and beautiful colonial buildings painted in vibrant colors. The best way to explore Cartagena is on foot, wandering through its narrow streets and plazas filled with lush greenery.</p>
+                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We recommend staying within the Walled City, where everything is just a short walk away. The constant sound of live music, along with excellent food and lively bars, brings every corner of this unique city to life.</p>
                         </div>
                     </div>
                 </div>

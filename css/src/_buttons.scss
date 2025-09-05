@@ -23,8 +23,8 @@
     }
 
     &-primary {
-        background-color: var(--bs-primary);
-        color: var(--bs-white);
+        border: 1px solid var(--bs-primary);
+        color: var(--bs-primary);
     }
 
     &-secondary {
