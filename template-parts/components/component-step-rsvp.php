@@ -21,15 +21,15 @@
                     <button type="button" class="btn btn-secondary rsvp-find-btn w-100 border-0 fs-lg-p-medium fs-6">FIND YOUR INVITATION</button>
                 </div>
 
-                <!-- Paso 2: CEREMONY -->
+                <!-- Paso 2: SHABBAT -->
                 <div id="step-2" class="rsvp-form-step">
-                    <h2 class="fs-lg-3 text-primary mb-2">CEREMONY</h2>
+                    <h2 class="fs-lg-3 text-primary mb-2">SHABBAT</h2>
                     <div class="rsvp-form-event-details">
-                        <p class="fs-6 text-black font-secondary mb-1">May 24th, 2026</p>
-                        <p class="fs-6 text-black font-secondary mb-1">Baluarte Santa Clara</p>
-                        <p class="fs-6 text-black font-secondary mb-4">7:00 pm</p>
+                        <p class="fs-6 text-black font-secondary mb-1">May 22th, 2026</p>
+                        <p class="fs-6 text-black font-secondary mb-1">Casa 1537</p>
+                        <p class="fs-6 text-black font-secondary">7:00 P.M.</p>
                     </div>
-                    <div id="guest-list-ceremony" class="rsvp-guest-list mt-3">
+                    <div id="guest-list-welcome" class="rsvp-guest-list mt-3">
                         <!-- Se llena dinámicamente con JavaScript -->
                     </div>
                     <div class="rsvp-form-buttons">
@@ -44,54 +44,8 @@
                     </div>
                 </div>
 
-                <!-- Paso 3: RECEPTION -->
+                <!-- Paso 3: WELCOME COCKTAIL -->
                 <div id="step-3" class="rsvp-form-step">
-                    <h2 class="fs-lg-3 text-primary mb-2">RECEPTION</h2>
-                    <div class="rsvp-form-event-details">
-                        <p class="fs-6 text-black font-secondary mb-1">May 24th, 2026</p>
-                        <p class="fs-6 text-black font-secondary mb-1">Teatro Heredia</p>
-                        <p class="fs-6 text-black font-secondary mb-1">Following the ceremony</p>
-                    </div>
-                    <div id="guest-list-reception" class="rsvp-guest-list mt-3">
-                        <!-- Se llena dinámicamente con JavaScript -->
-                    </div>
-                    <div class="rsvp-form-buttons">
-                        <div class="row d-flex flex-xl-row flex-column-reverse">
-                            <div class="col-12 col-xl-6">
-                                <button type="button" class="btn btn-primary rsvp-back-btn font-secondary border-1 mx-auto">BACK</button>
-                            </div>
-                            <div class="col-12 col-xl-6 mb-xl-0 mb-2">
-                                <button type="button" class="btn btn-secondary rsvp-next-btn font-secondary border-0 mx-auto">CONTINUE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paso 4: WELCOME PARTY -->
-                <div id="step-4" class="rsvp-form-step">
-                    <h2 class="fs-lg-3 text-primary mb-2">SHABBAT</h2>
-                    <div class="rsvp-form-event-details">
-                        <p class="fs-6 text-black font-secondary mb-1">May 22th, 2026</p>
-                        <p class="fs-6 text-black font-secondary mb-1">Casa 1537</p>
-                        <p class="fs-6 text-black font-secondary">7:00 P.M.</p>
-                    </div>
-                    <div id="guest-list-welcome" class="rsvp-guest-list mt-3">
-                        <!-- Se llena dinámicamente con JavaScript -->
-                    </div>
-                    <div class="rsvp-form-buttons">
-                        <div class="row d-flex flex-xl-row flex-column-reverse">
-                            <div class="col-12 col-xl-6">
-                                <button type="button" class="btn btn-primary rsvp-back-btn font-secondary border-1 mx-auto">BACK</button>
-                            </div>
-                            <div class="col-12 col-xl-6 mb-xl-0 mb-2">
-                                <button type="button" class="btn btn-secondary rsvp-next-btn font-secondary border-0 mx-auto">CONTINUE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Paso 5: FAREWELL BRUNCH -->
-                <div id="step-5" class="rsvp-form-step">
                     <h2 class="fs-lg-3 text-primary mb-2">WELCOME COCKTAIL</h2>
                     <div class="rsvp-form-event-details">
                         <p class="fs-6 text-black font-secondary mb-1">May 23th, 2026</p>
@@ -114,8 +68,31 @@
                     </div>
                 </div>
 
-                <!-- Paso 6: Información Adicional -->
-                <div id="step-6" class="rsvp-form-step">
+                <!-- Paso 4: CEREMONY -->
+                <div id="step-4" class="rsvp-form-step">
+                    <h2 class="fs-lg-3 text-primary mb-2">CEREMONY</h2>
+                    <div class="rsvp-form-event-details">
+                        <p class="fs-6 text-black font-secondary mb-1">May 24th, 2026</p>
+                        <p class="fs-6 text-black font-secondary mb-1">Baluarte Santa Clara</p>
+                        <p class="fs-6 text-black font-secondary mb-4">7:00 pm</p>
+                    </div>
+                    <div id="guest-list-ceremony" class="rsvp-guest-list mt-3">
+                        <!-- Se llena dinámicamente con JavaScript -->
+                    </div>
+                    <div class="rsvp-form-buttons">
+                        <div class="row d-flex flex-xl-row flex-column-reverse">
+                            <div class="col-12 col-xl-6">
+                                <button type="button" class="btn btn-primary rsvp-back-btn font-secondary border-1 mx-auto">BACK</button>
+                            </div>
+                            <div class="col-12 col-xl-6 mb-xl-0 mb-2">
+                                <button type="button" class="btn btn-secondary rsvp-next-btn font-secondary border-0 mx-auto">CONTINUE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 5: Información Adicional -->
+                <div id="step-5" class="rsvp-form-step">
                     <h2 class="fs-lg-3 text-primary mb-2">ADDITIONAL INFO</h2>
                     <p class="fs-6 text-black font-secondary mb-1">Tell us if you have any food <br> allergies or restrictions</p>
                     <textarea id="allergies" class="p-3 font-secondary w-100 mb-3" placeholder="Food allergies or restrictions..."></textarea>
@@ -132,8 +109,8 @@
                     </div>
                 </div>
 
-                <!-- Paso 7: Agradecimiento -->
-                <div id="step-7" class="rsvp-form-step">
+                <!-- Paso 6: Agradecimiento -->
+                <div id="step-6" class="rsvp-form-step">
                     <div class="rsvp-thank-you">
                         <h3 class="fs-lg-3 text-primary mb-2">THANKS</h3>
                         <p class="fs-6 text-black font-secondary mb-1 col-xl-8 pe-xl-3">Thank you for confirming your attendance to our wedding. We are truly delighted to share this very special day with you. A copy of your confirmation will be sent to your email.</p>

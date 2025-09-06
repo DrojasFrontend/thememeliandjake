@@ -31,10 +31,9 @@ function sendAdminEmail($guest_name, $guests, $allergies, $email) {
     
     // Generate detailed list by event
     $event_names = [
-        'ceremony' => 'CEREMONY (May 24th, 2026)',
-        'reception' => 'RECEPTION (May 24th, 2026)',
         'welcome' => 'SHABBAT (May 22th, 2026)',
-        'brunch' => 'WELCOME COCKTAIL (May 23th, 2026)'
+        'brunch' => 'WELCOME COCKTAIL (May 23th, 2026)',
+        'ceremony' => 'CEREMONY (May 24th, 2026)'
     ];
     
     $total_accepts = 0;
@@ -233,15 +232,6 @@ function sendGuestEmail($guest_name, $email, $declined_all = false) {
                             <strong>Date:</strong> May 24th, 2026<br>
                             <strong>Location:</strong> Baluarte Santa Clara <br>
                             <strong>Time:</strong> 7:00 P.M.
-                        </div>
-                    </div>
-                    
-                    <div class="event">
-                        <div class="event-title">💒 RECEPTION</div>
-                        <div class="event-details">
-                            <strong>Date:</strong> May 24th, 2026<br>
-                            <strong>Location:</strong> Teatro Heredia<br>
-                            <strong>Dress Code:</strong> Tropical Tuxedo - White Jacket - Smoking Tropical
                         </div>
                     </div>
                     

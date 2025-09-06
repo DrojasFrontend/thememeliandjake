@@ -9,7 +9,6 @@ let rsvpState = {
     guestList: [],
     rsvpData: {
         ceremony: {},
-        reception: {},
         welcome: {},
         brunch: {}
     }
@@ -17,10 +16,9 @@ let rsvpState = {
 
 // Configuración de eventos
 const rsvpEvents = [
-    { id: 'ceremony', step: 2, name: 'CEREMONY' },
-    { id: 'reception', step: 3, name: 'RECEPTION' },
-    { id: 'welcome', step: 4, name: 'WELCOME PARTY' },
-    { id: 'brunch', step: 5, name: 'FAREWELL BRUNCH' }
+    { id: 'welcome', step: 2, name: 'SHABBAT' },
+    { id: 'brunch', step: 3, name: 'WELCOME COCKTAIL' },
+    { id: 'ceremony', step: 4, name: 'CEREMONY' }
 ];
 
 // Datos de invitados (embebidos directamente)
@@ -419,7 +417,6 @@ function resetForm() {
     rsvpState.guestList = [];
     rsvpState.rsvpData = {
         ceremony: {},
-        reception: {},
         welcome: {},
         brunch: {}
     };
@@ -452,14 +449,14 @@ function showStep(step) {
     rsvpState.currentStep = step;
     
     // Configurar paso específico
-    if (step >= 2 && step <= 5) {
+    if (step >= 2 && step <= 4) {
         const event = rsvpEvents.find(e => e.step === step);
         if (event) {
             setupEventStep(event.id);
         }
-    } else if (step === 6) {
+    } else if (step === 5) {
         setupAdditionalInfoStep();
-    } else if (step === 7) {
+    } else if (step === 6) {
         setupThankYouStep();
     }
 }
@@ -624,7 +621,6 @@ window.selectGuest = function(guestName) {
     // Inicializar datos RSVP para cada evento
     rsvpState.guestList.forEach(guest => {
         rsvpState.rsvpData.ceremony[guest] = 'pending';
-        rsvpState.rsvpData.reception[guest] = 'pending';
         rsvpState.rsvpData.welcome[guest] = 'pending';
         rsvpState.rsvpData.brunch[guest] = 'pending';
     });
@@ -720,7 +716,7 @@ function checkIfPrimaryGuestDeclinedAll() {
     if (!primaryGuest) return false;
     
     // Verificar cada evento
-    const events = ['ceremony', 'reception', 'welcome', 'brunch'];
+    const events = ['ceremony', 'welcome', 'brunch'];
     for (const eventId of events) {
         const response = rsvpState.rsvpData[eventId][primaryGuest];
         // Si acepta explícitamente O está pendiente (que se considera accept), no declinó todos
@@ -794,12 +790,12 @@ function updateEventButtons(eventId) {
 
 // Validar si se puede continuar
 function canContinue() {
-    // Para eventos (pasos 2-5): Siempre se puede continuar (no es obligatorio responder)
-    if (rsvpState.currentStep >= 2 && rsvpState.currentStep <= 5) {
+    // Para eventos (pasos 2-4): Siempre se puede continuar (no es obligatorio responder)
+    if (rsvpState.currentStep >= 2 && rsvpState.currentStep <= 4) {
         return true;
     }
     // Para información adicional: Solo email es obligatorio
-    if (rsvpState.currentStep === 6) {
+    if (rsvpState.currentStep === 5) {
         const emailInput = document.getElementById('guest-email');
         return emailInput && emailInput.value.trim() !== '';
     }
@@ -813,7 +809,7 @@ function nextStep() {
         return;
     }
     
-    if (rsvpState.currentStep === 6) {
+    if (rsvpState.currentStep === 5) {
         submitRSVP();
     } else {
         showStep(rsvpState.currentStep + 1);
@@ -851,7 +847,7 @@ function submitRSVP() {
     };
     
     // Mostrar loading
-    document.getElementById('step-6').innerHTML = '<div class="rsvp-loading">Sending...</div>';
+    document.getElementById('step-5').innerHTML = '<div class="rsvp-loading">Sending...</div>';
     
     // Construir body correctamente
     const formData = new FormData();
@@ -889,12 +885,12 @@ function submitRSVP() {
     .then(text => {
         const data = JSON.parse(text);
         if (data.success) {
-            showStep(7);
+            showStep(6);
         } else {
             console.error('❌ Error al enviar RSVP:', data.message);
             alert('Error al enviar RSVP: ' + data.message);
-            // Regenerar el paso 6 sin el loading
-            showStep(6);
+            // Regenerar el paso 5 sin el loading
+            showStep(5);
             setupAdditionalInfoStep();
         }
     })
@@ -903,10 +899,10 @@ function submitRSVP() {
         // En local, simular éxito para testing
         if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
             alert('MODO LOCAL: RSVP procesado (revisa la consola para ver los datos)');
-            showStep(7);
+            showStep(6);
         } else {
             alert('Error al enviar RSVP');
-            showStep(6);
+            showStep(5);
         }
     });
 } 

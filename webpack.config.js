@@ -15,7 +15,7 @@ module.exports = [
 		},
 		devServer: {
 			static: path.resolve(__dirname),
-			port: 8080,
+			port: 3002,
 			hot: true,
 			watchFiles: {
 				paths: [
@@ -94,7 +94,7 @@ module.exports = [
 			}),
 			new BrowserSyncPlugin({
 				proxy: "http://meliandjake.local/", // Ajusta esto a tu URL local de WordPress
-				port: 3000,
+				port: 3002,
 				files: ["./**/*.php", "./css/src/**/*.scss", "./js/src/**/*.js"],
 				injectChanges: true,
 				notify: false,

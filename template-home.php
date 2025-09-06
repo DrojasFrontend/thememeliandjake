@@ -66,14 +66,15 @@ get_header();
                             <a href="https://maps.app.goo.gl/qNo9DagZGzH98abA8" target="_blank" class="btn btn-primary mx-auto mb-5">LOCATION</a>
 
 
-                            <h2 class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-4">DRESS CODE</h2>
+                            <h2 class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-2">DRESS CODE</h2>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#blackTie" class="btn btn-secondary mb-5 border-0 mx-auto">BLACK TIE</button>
+                            <!-- <h2 class="font-restora fs-lg-2 fs-p text-black letter-spacing-lg-15 letter-spacing-1">Tropical Tuxedo - White Jacket</h2> -->
+                            <!-- <h2 class="font-restora fs-lg-2 fs-p text-black letter-spacing-lg-15 letter-spacing-1 mb-4">Smoking Tropical</h2> -->
 
-                            <h2 class="font-restora fs-lg-2 fs-p text-black letter-spacing-lg-15 letter-spacing-1">Tropical Tuxedo - White Jacket</h2>
-                            <h2 class="font-restora fs-lg-2 fs-p text-black letter-spacing-lg-15 letter-spacing-1 mb-4">Smoking Tropical</h2>
+                            <h2 class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-2">GIFTS</h2>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#gifts" class="btn btn-secondary mb-5 border-0 mx-auto">PENDING</button>
 
-                            <button class="btn btn-primary border-0 mx-auto mb-4" type="button" data-bs-toggle="modal" data-bs-target="#gifts">
-                                GIFTS
-                            </button>
+                           
                         </div>
                     </div>
                 </div>
@@ -108,6 +109,7 @@ get_header();
 
                         <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8">DRESS CODE</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">White Cocktail Chic Attire</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#casualWhite" class="btn btn-secondary mb-5 border-0">CASUAL WHITE</button>
     
                         <p class="font-restora fs-lg-p-small fs-p-small text-black letter-spacing-lg-15 letter-spacing-1">Additional INFO pending, INFO ADICIONAL pendiente</p>
                     </div>
@@ -146,8 +148,9 @@ get_header();
                             <p class="font-restora fs-lg-4 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-3">Centro de convenciones Cartagena de Indias</p>
                             <a href="https://maps.app.goo.gl/nMMrFYRjqier7YFr6" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
     
-                            <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8">DRESS CODE</p>
-                            <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Tropical Sunset Chic Attire</p>
+                            <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-2">DRESS CODE</p>
+                            <!-- <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">Tropical Sunset Chic Attire</p> -->
+                             <button type="button" data-bs-toggle="modal" data-bs-target="#tropicalSunset" class="btn btn-secondary mb-5 border-0">TROPICAL CHIC COCKTAIL</button>
                         </div>
                     </div>
                 </div>
@@ -294,6 +297,8 @@ get_header();
     </section>
 
     <?php get_template_part('template-parts/components/component-step-rsvp'); ?>
+
+    <?php get_template_part('template-parts/components/component-modal'); ?>
 </main>
 
 <?php 
