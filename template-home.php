@@ -282,8 +282,8 @@ get_header();
                     <div class="position-relative col-12 col-lg-8 mx-auto -mt-lg-7">
                         <div class="customBoxPaper p-lg-5 py-5" id="rsvp">
                             <h2 class="font-restora fs-lg-1 fs-1-small text-center text-primary fw-light letter-spacing-lg-28-2 mb-lg-5">R.S.V.P.</h2>
-                            <p class="font-restora fs-lg-p text-black text-center letter-spacing-lg-1 mb-5">Kindly respond by APRIL 15th, 2026</p>
-                            <button class="btn btn-primary border-0 mx-auto rsvp-open-btn" type="button">
+                            <p class="font-restora fs-lg-3 text-black text-center letter-spacing-lg-1 mb-5">Kindly respond by APRIL 15th, 2026</p>
+                            <button class="btn btn-secondary border-0 mx-auto rsvp-open-btn" type="button">
                                 R.S.V.P.
                             </button>
                         </div>

@@ -161,6 +161,7 @@ table {
     --bs-primary-300: #FAF7EC;
     --bs-gray-100: #606060;
     --bs-gray-200: #4D4D4D;
+    --bs-gray-300: #DADADA;
     --bs-white: #fff;
 
     --bs-font-family-base: "Restora Neue", serif;
@@ -209,6 +210,10 @@ strong {
     color: var(--bs-white) !important;
 }
 
+.text-gray-300 {
+    color: var(--bs-gray-300) !important;
+}
+
 /* Backgrounds */
 .bg-white {
     background-color: var(--bs-white) !important;
@@ -232,6 +237,10 @@ strong {
 
 .bg-primary-300 {
     background-color: var(--bs-primary-300) !important;
+}
+
+.bg-gray-300 {
+    background-color: var(--bs-gray-300) !important;
 }
 
 .border-primary {
