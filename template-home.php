@@ -3,9 +3,6 @@
 * Template Name: Inicio
 */
 
-// Manejar las peticiones AJAX del RSVP
-handle_rsvp_ajax();
-
 get_header();
 
 ?>
@@ -98,7 +95,7 @@ get_header();
         <div class="pt-lg-5 position-relative pb-lg-5" id="events">
             <div class="container">
                 <div class="row d-flex flex-lg-row flex-column-reverse">
-                    <div class="col-12 col-lg-6 ps-lg-4 px-5 pb-5">
+                    <div class="col-12 col-lg-6 ps-lg-4 px-lg-5 px-3 pb-5">
                         <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light letter-spacing-1">Shabbat</h2>
                         <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-4">CENA DE SHABBAT</p>
     
@@ -107,9 +104,9 @@ get_header();
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2">CASA 1537</p>
                         <a href="https://maps.app.goo.gl/hTUVaZimVJ4sRWit5" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
 
-                        <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8">DRESS CODE</p>
-                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">White Cocktail Chic Attire</p>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#casualWhite" class="btn btn-secondary mb-5 border-0">CASUAL WHITE</button>
+                        <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-2">DRESS CODE</p>
+                        <!-- <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">White Cocktail Chic Attire</p> -->
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#casualWhite" class="btn btn-secondary mb-5 border-0">White Cocktail Chic Attire</button>
     
                         <p class="font-restora fs-lg-p-small fs-p-small text-black letter-spacing-lg-15 letter-spacing-1">Additional INFO pending, INFO ADICIONAL pendiente</p>
                     </div>
@@ -138,7 +135,7 @@ get_header();
                 <div class="col-12 col-lg-6 gx-lg-0">
                     <div class="d-flex flex-column justify-content-center h-100">
                         <div class="customBoxPaper p-lg-5 px-3">
-                            <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light text-lg-left text-center">Welcome Cocktail</h2>
+                            <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light mb-1">Welcome Cocktail</h2>
                             <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-4 mt-lg-0 mt-2">COCTÉL <br class="d-block d-lg-none"> DE BIENVENIDA</p>
     
                             <h2 class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 23th, 2026</h2>

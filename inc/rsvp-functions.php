@@ -33,7 +33,8 @@ function sendAdminEmail($guest_name, $guests, $allergies, $email) {
     $event_names = [
         'welcome' => 'SHABBAT (May 22th, 2026)',
         'brunch' => 'WELCOME COCKTAIL (May 23th, 2026)',
-        'ceremony' => 'CEREMONY (May 24th, 2026)'
+        'ceremony' => 'WEDDING DAY - CEREMONY (May 24th, 2026)',
+        'reception' => 'WEDDING DAY - RECEPTION (May 24th, 2026)'
     ];
     
     $total_accepts = 0;
@@ -227,10 +228,19 @@ function sendGuestEmail($guest_name, $email, $declined_all = false) {
                 
                 <div class="events-container">
                     <div class="event">
-                        <div class="event-title">💒 CEREMONY</div>
+                        <div class="event-title">💒 WEDDING DAY - CEREMONY</div>
                         <div class="event-details">
                             <strong>Date:</strong> May 24th, 2026<br>
                             <strong>Location:</strong> Baluarte Santa Clara <br>
+                            <strong>Time:</strong> 7:00 P.M.
+                        </div>
+                    </div>
+                    
+                    <div class="event">
+                        <div class="event-title">🎉 WEDDING DAY - RECEPTION</div>
+                        <div class="event-details">
+                            <strong>Date:</strong> May 24th, 2026<br>
+                            <strong>Location:</strong> Teatro Adolfo Mejía <br>
                             <strong>Time:</strong> 7:00 P.M.
                         </div>
                     </div>
@@ -416,4 +426,10 @@ function handle_rsvp_ajax() {
             exit;
         }
     }
-} 
+}
+
+// Registrar hooks AJAX para WordPress
+add_action('wp_ajax_submit_rsvp', 'handle_rsvp_ajax');
+add_action('wp_ajax_nopriv_submit_rsvp', 'handle_rsvp_ajax');
+add_action('wp_ajax_get_guests', 'handle_rsvp_ajax');
+add_action('wp_ajax_nopriv_get_guests', 'handle_rsvp_ajax');

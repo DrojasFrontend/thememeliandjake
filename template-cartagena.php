@@ -570,7 +570,7 @@ $places = [
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="customSectionHero__img position-relative h-100 float-start">
-                        <img class="position-absolute top-0 start-0 shadow-1 d-none d-lg-block" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
+                        <img height="1200px" class="position-absolute top-0 start-0 shadow-1 d-none d-lg-block" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
                         <img class="position-relative w-100 shadow-1 d-block d-lg-none" src="<?php echo THEME_IMG; ?>hero-cartagena.webp" alt="Hero">
                     </div>
                 </div>
