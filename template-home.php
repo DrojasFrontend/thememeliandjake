@@ -101,8 +101,8 @@ get_header();
     
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">May 22th, 2026</p>
                         <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1">7:00 P.M.</p>
-                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2">CASA 1537</p>
-                        <a href="https://maps.app.goo.gl/hTUVaZimVJ4sRWit5" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
+                        <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-2 uppercase">Casa Real, no casa 1537.</p>
+                        <a href="https://maps.app.goo.gl/ponss7UZCLR84iXA9" target="_blank" class="btn btn-primary mb-5">LOCATION</a>
 
                         <p class="font-restora fs-lg-4 fs-p text-black letter-spacing-lg-96 letter-spacing-8 mb-2">DRESS CODE</p>
                         <!-- <p class="font-restora fs-lg-2 fs-2 text-black letter-spacing-lg-15 letter-spacing-1 mb-4">White Cocktail Chic Attire</p> -->
@@ -164,7 +164,7 @@ get_header();
                             <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light mb-4">Cartagena</h2>
                             <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We are delighted to celebrate our wedding in Colombia’s coastal gem, Cartagena. Recognized as a UNESCO World Heritage Site, this city is one of South America’s greatest cultural treasures.</p>
                             <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">In its historic center, known as the Walled City, you will find charming plazas, cobblestone streets, and beautiful colonial buildings painted in vibrant colors. The best way to explore Cartagena is on foot, wandering through its narrow streets and plazas filled with lush greenery.</p>
-                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We recommend staying within the Walled City, where everything is just a short walk away. The constant sound of live music, along with excellent food and lively bars, brings every corner of this unique city to life.</p>
+                            <p class="font-restora fs-lg-6 fs-p-small text-black letter-spacing-lg-1 mb-3">We recommend staying within the Walled City, where everything is just a short walk away. The constant sound of live music, along with excellent food and lively bars, brings every corner of this unique city to life. As in any destination, we kindly suggest being mindful of your belongings and avoiding drinking non-bottled water.</p>
                         </div>
                     </div>
                 </div>

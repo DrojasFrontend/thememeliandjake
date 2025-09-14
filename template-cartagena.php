@@ -11,8 +11,16 @@ $places = [
     "title" => "Hotels",
     "title_es" => "Hotels",
     "img" => THEME_IMG . 'icons/icon-hotel.svg',
-    "info" => "We welcome you to stay at any of the beautiful hotels or colonial homes in Cartagena has to offer. The bride and groom will be staying at the <strong>Charleston Santa Teresa</strong> for the guests who would like to join them.",
+    "info" => "We welcome you to stay at any of the beautiful hotels or colonial homes in Cartagena has to offer. The bride and groom will be staying at the <strong>Sofitel Legend Santa Clara</strong> for the guests who would like to join them.",
     "places" => [
+        [
+            "name" => "Sofitel Legend <br> Santa Clara",
+            "address" => "Calle Del Torno # 39 - 29",
+            "city" => "Cartagena, Colombia",
+            "phone" => "+57 (605) 6504700",
+            "link" => "https://www.sofitellegendsantaclara.com/",
+            "image" => THEME_IMG . 'places-cartagena/hoteles-1.webp',
+        ],
         [
             "name" => "Hotel Charleston Santa Teresa",
             "address" => "Cra. 3 # 31 - 23",
@@ -37,14 +45,7 @@ $places = [
             "link" => "https://www.intercartagena.com/",
             "image" => THEME_IMG . 'places-cartagena/hoteles-0.webp',
         ],
-        [
-            "name" => "Sofitel Legend Santa Clara",
-            "address" => "Calle Del Torno # 39 - 29",
-            "city" => "Cartagena, Colombia",
-            "phone" => "+57 (605) 6504700",
-            "link" => "https://www.sofitellegendsantaclara.com/",
-            "image" => THEME_IMG . 'places-cartagena/hoteles-1.webp',
-        ],
+        
         [
             "name" => "Casa Lola",
             "address" => "Calle del Guerrero # 29 - 108",
