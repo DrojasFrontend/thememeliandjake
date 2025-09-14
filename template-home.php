@@ -158,7 +158,7 @@ get_header();
         </div>
         <div class="container position-relative" id="cartagena">
             <div class="row">
-                <div class="col-12 col-lg-7 mx-auto">
+                <div class="col-12 col-lg-8 mx-auto">
                     <div class="customBoxPaper customBoxPaper__cartagena p-lg-5 pb-lg-0 text-center">
                         <div class="px-lg-4 py-lg-0 px-4 pb-5">
                             <h2 class="font-austrisa fs-lg-1 fs-1 text-primary fw-light mb-4">Cartagena</h2>
